@@ -1,0 +1,22 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem;
+  padding-bottom: 0;
+  color: white;
+
+  &__link {
+    color: white;
+
+    &:hover,
+    &:focus {
+      color: purple;
+    }
+  }
+
+  &__game {
+    text-transform: uppercase;
+  }
+}

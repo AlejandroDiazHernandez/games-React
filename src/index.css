@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand&display=swap');
+
+body {
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+  color: white;
+  background-color: black;
+  font-family: 'Quicksand', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Press Start 2P', cursive;
+}
+
+button {
+  font-family: 'Press Start 2P', cursive;
+}

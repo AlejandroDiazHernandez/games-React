@@ -1,0 +1,32 @@
+.Hangman {
+  &__game {
+    padding: 1rem;
+  }
+
+  &__hint {
+    line-height: 4rem;
+    text-transform: uppercase;
+  }
+
+  &__hearts {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas:
+      '. . .'
+      '. . .';
+
+    > img {
+      margin: 0 auto;
+      width: 64px;
+      height: auto;
+    }
+  }
+
+  &__loose {
+    filter: invert(1);
+    height: 200px;
+  }
+}

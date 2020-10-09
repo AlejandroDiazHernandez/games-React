@@ -1,0 +1,42 @@
+// SCSS Variables
+$layout_bp_mobile: 360px;
+$layout_bp_tablet: 750px;
+$layout_bp_desktop: 1000px;
+
+// SCSS Mixins
+@mixin less-than-tablet {
+  @media only screen and (max-width: $layout_bp_tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $layout_bp_desktop) {
+    @content;
+  }
+}
+
+%flex-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+%column {
+  display: flex;
+  flex-direction: column;
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
